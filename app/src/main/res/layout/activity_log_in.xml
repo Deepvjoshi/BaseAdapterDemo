@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_in"
+    android:layout_width="match_parent"
+    android:background="#f6280303"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+android:weightSum="2"
+    tools:context="com.deepjoshi.logibox.Log_in">
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My Box"
+        android:textSize="50dp"
+        android:textColor="#aab1dada"
+        android:fontFamily="cursive"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EmailId"
+        android:textColor="#aab1dada"
+        android:textColorHint="#aab1dada"
+        android:inputType="text"
+        android:id="@+id/login_edittext_eid"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+android:paddingTop="30dp"
+        android:textColorHint="#aab1dada"
+        android:inputType="textVisiblePassword"
+        android:id="@+id/login_edittext_password"
+        />
+    </LinearLayout>
+    <Button
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:background="#0000"
+        android:textColor="#aab1dada"
+        android:textSize="20dp"
+
+        android:id="@+id/login_button_login"
+        android:layout_gravity="center"
+        />
+<LinearLayout
+    android:gravity="bottom"
+    android:layout_weight="1.4"
+    android:paddingTop="30dp"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    <Button
+        android:layout_width="wrap_content"
+      android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/login_button_signup"
+        android:text="sign up"
+        android:textSize="18dp"
+        android:textColor="#aab1dada"
+
+        android:background="#0000"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/login_button_frgtPasswrd"
+        android:text="Forgot Password??"
+        android:textSize="16dp"
+        android:textColor="#aab1dada"
+        android:paddingLeft="12dp"
+
+        android:background="#0000"
+
+        />
+</LinearLayout>
+
+
+</LinearLayout>
